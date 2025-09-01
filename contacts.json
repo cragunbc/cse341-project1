@@ -1,0 +1,53 @@
+{
+    "contacts": [
+        {
+            "firstName": "Adam",
+            "lastname": "Birch",
+            "email": "beastlyman@gmail.com",
+            "favoriteColor": "Blue",
+            "birthday": "2000-08-18"
+        },
+        {
+            "firstName": "Carter",
+            "lastname": "Rhodes",
+            "email": "cholestorol@gmail.com",
+            "favoriteColor": "Red",
+            "birthday": "2000-05-25"
+        },
+        {
+            "firstName": "Mathew",
+            "lastname": "Peterson",
+            "email": "typicalshadow@gmail.com",
+            "favoriteColor": "Green",
+            "birthday": "2001-10-13"
+        },
+        {
+            "firstName": "Michael",
+            "lastname": "Huff",
+            "email": "ctoboss@gmail.com",
+            "favoriteColor": "Red",
+            "birthday": "1965-03-13"
+        },
+        {
+            "firstName": "Chet",
+            "lastname": "Linton",
+            "email": "ceoboss@gmail.com",
+            "favoriteColor": "Orange",
+            "birthday": "1966-10-13"
+        },
+        {
+            "firstName": "Elliott",
+            "lastname": "Winberg",
+            "email": "clientsuccess@gmail.com",
+            "favoriteColor": "Blue",
+            "birthday": "1986-03-20"
+        },
+        {
+            "firstName": "Jeff",
+            "lastname": "Moore",
+            "email": "cfoboss@gmail.com",
+            "favoriteColor": "Blue",
+            "birthday": "1978-08-13"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+// LOCALHOST
+### Gets all of the clients
+GET http://localhost:3000/contacts
+
+
+### Gets one contact by id
+GET http://localhost:3000/contacts/689ff507d694f01090951e06

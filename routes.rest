@@ -1,7 +1,75 @@
 // LOCALHOST
-### Gets all of the clients
+### Gets all of the contacts locally
 GET http://localhost:3000/contacts
 
 
-### Gets one contact by id
-GET http://localhost:3000/contacts/689ff507d694f01090951e06
+### Gets one contact by id locally
+GET http://localhost:3000/contacts/689ff558d694f01090951e07
+
+
+### Creates a new contact locally
+POST http://localhost:3000/contacts
+content-type: application/json
+
+{
+    "firstName": "Sarah",
+    "lastname": "Johnson",
+    "email": "test@gmail.com",
+    "favoriteColor": "Red",
+    "birthday": "2010-05-25"
+}
+
+
+### Updates a contact locally
+PUT http://localhost:3000/contacts/68bf87e403ff79207e421aef
+content-type: application/json
+
+{
+    "firstName": "Adam",
+    "lastname": "Birch III",
+    "email": "beastlyman@gmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "2000-08-18"
+}
+
+
+### Deletes a contact locally
+DELETE http://localhost:3000/contacts/68bf88d72a44f499b72efe76
+
+
+### Gets all of the contacts from Render
+GET https://cse341-project1-tdkv.onrender.com/contacts
+
+
+### Gets one contact by id from Render
+GET https://cse341-project1-tdkv.onrender.com/contacts/689ff558d694f01090951e07
+
+
+### Creates a new contact from Render
+POST https://cse341-project1-tdkv.onrender.com/contacts
+content-type: application/json
+
+{
+    "firstName": "Sarah",
+    "lastname": "Johnson",
+    "email": "test@gmail.com",
+    "favoriteColor": "Red",
+    "birthday": "2010-05-25"
+}
+
+
+### Updates a contact from Render
+PUT https://cse341-project1-tdkv.onrender.com/contacts/68bf87e403ff79207e421aef
+content-type: application/json
+
+{
+    "firstName": "Adam",
+    "lastname": "Birch III",
+    "email": "beastlyman@gmail.com",
+    "favoriteColor": "Blue",
+    "birthday": "2000-08-18"
+}
+
+
+### Deletes a contact from Render
+DELETE https://cse341-project1-tdkv.onrender.com/contacts/68bf88d72a44f499b72efe76

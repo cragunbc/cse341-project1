@@ -39,13 +39,14 @@
         "tags": [
           "Contacts"
         ],
-        "description": "",
+        "summary": "Gets all contacts",
+        "description": "Gets a list of all of the contacts from the database.",
         "produces": [
           "application/json"
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK, a list of all of the contacts will be returned"
           }
         }
       },
@@ -53,7 +54,8 @@
         "tags": [
           "Contacts"
         ],
-        "description": "",
+        "summary": "Creates a new contact",
+        "description": "Creates a new contact from the JSON body info that you provide which will include: firstName, lastname, email, favoriteColor, and birthday",
         "parameters": [
           {
             "name": "body",
@@ -62,19 +64,19 @@
               "type": "object",
               "properties": {
                 "firstName": {
-                  "example": "any"
+                  "example": "John"
                 },
                 "lastname": {
-                  "example": "any"
+                  "example": "Johnson"
                 },
                 "email": {
-                  "example": "any"
+                  "example": "test1@test.com"
                 },
                 "favoriteColor": {
-                  "example": "any"
+                  "example": "blue"
                 },
                 "birthday": {
-                  "example": "any"
+                  "example": "02-15-1987"
                 }
               }
             }
@@ -82,7 +84,7 @@
         ],
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "Success in creating your new contact!"
           },
           "500": {
             "description": "Internal Server Error"
@@ -95,7 +97,8 @@
         "tags": [
           "Contacts"
         ],
-        "description": "",
+        "summary": "Pulls an already existing contact by their ID",
+        "description": "Pulls a contact that is already in the database based off of it's ID that you provide",
         "produces": [
           "application/json"
         ],
@@ -109,7 +112,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK, success in pulling your contact!"
           }
         }
       },
@@ -117,7 +120,8 @@
         "tags": [
           "Contacts"
         ],
-        "description": "",
+        "summary": "Updates an already exiting contact",
+        "description": "Updates a contact that already exists in the database based off of the ID that you provide",
         "parameters": [
           {
             "name": "id",
@@ -152,7 +156,7 @@
         ],
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "Success in updating your contact!"
           },
           "500": {
             "description": "Internal Server Error"
@@ -163,7 +167,8 @@
         "tags": [
           "Contacts"
         ],
-        "description": "",
+        "summary": "Deletes a contact",
+        "description": "Deletes a contact based off of the ID that you provide",
         "parameters": [
           {
             "name": "id",
@@ -174,7 +179,7 @@
         ],
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "Contact was successfully deleted!"
           },
           "500": {
             "description": "Internal Server Error"

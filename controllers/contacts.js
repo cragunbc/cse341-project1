@@ -7,6 +7,9 @@ const getAll = async (req, res) => {
     result.toArray().then((contacts) => {
         res.setHeader("Content-Type", "application/json");
         res.status(200).json(contacts)
+    })
+    .catch((error) => {
+        res.status(500).json({message: error});
     });
 };
 
@@ -18,6 +21,9 @@ const getSingle = async (req, res) => {
     result.toArray().then((contacts) => {
         res.setHeader("Content-Type", "application/json");
         res.status(200).json(contacts[0])
+    })
+    .catch((error) => {
+        res.status(500).json({message: error});
     });
 };
 

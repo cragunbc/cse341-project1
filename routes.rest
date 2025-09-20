@@ -4,7 +4,7 @@ GET http://localhost:3000/contacts
 
 
 ### Gets one contact by id locally
-GET http://localhost:3000/contacts/689ff558d694f01090951e07
+GET http://localhost:3000/contacts/68bf87e403ff79207e421aef
 
 
 ### Creates a new contact locally
@@ -14,8 +14,8 @@ content-type: application/json
 {
     "firstName": "Sarah",
     "lastname": "Johnson",
-    "email": "test@gmail.com",
-    "favoriteColor": "Red",
+    "email": "testgmail.com",
+    "favoriteColor": "Rdkjfsdkfjsdfjosijdfosdijf",
     "birthday": "2010-05-25"
 }
 
